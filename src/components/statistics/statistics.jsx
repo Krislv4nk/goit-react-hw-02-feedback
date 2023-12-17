@@ -11,19 +11,19 @@ export const Statistics = ({
   return (
     <ul>
       <li>
-        <p>Good: {good}</p>
+        <p className={css.text}>Good: {good}</p>
       </li>
       <li>
-        <p>Neutral: {neutral}</p>
+        <p className={css.text}>Neutral: {neutral}</p>
       </li>
       <li>
-        <p>Bad: {bad}</p>
+        <p className={css.text}>Bad: {bad}</p>
       </li>
       <li>
-        <p>Total: {total}</p>
+        <p className={css.textTotal}>Total: {total}</p>
       </li>
       <li>
-        <p>Positive feedback: {positivePercentage}%</p>
+        <p className={css.textFeedback}>Positive feedback: {positivePercentage}%</p>
       </li>
     </ul>
   );
