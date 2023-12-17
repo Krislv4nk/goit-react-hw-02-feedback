@@ -33,8 +33,8 @@ export class App extends Component {
     return (
       <div className={css.container}>
         <Section title="Please, leave feedback">
-          <FeedbackOptions 
-            options={['good', 'neutral', 'bad']} 
+           <FeedbackOptions 
+            options={Object.keys(this.state)} 
             onLeaveFeedback={this.handleFeedback} 
           />
         </Section>
